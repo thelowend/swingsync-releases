@@ -90,12 +90,6 @@ are separate; clear or replace a choice if you want to revisit it.
 | --- | --- |
 | macOS cannot verify the developer | For your trusted test build, try opening it, then use System Settings → Privacy & Security → Open Anyway. See [Apple's instructions](https://support.apple.com/en-us/102445). |
 | Windows shows SmartScreen | Test releases are unsigned and may show a reputation warning. Verify the package source and checksum before deciding whether to run it. |
-| Mac shows an old/default icon | Quit SwingSync, eject old DMGs, replace the app in Applications with the new build, and open that copy. Remove an old Dock shortcut and add the new app if needed. See [macOS icon checks](DESKTOP.md#macos-icon-checks). |
-| Desktop reports missing fonts | Run the three font installers and `npm run desktop:font:check`. |
-| Install reports an unapproved script | The package explicitly allows the pinned FFmpeg, electron-winstaller, and fsevents scripts. Check the exact package/version; do not approve every dependency script blindly. |
-| FFmpeg cannot start after moving the project | Extract fresh source and run `npm install` on the destination OS/architecture. Do not transfer `node_modules` from another platform. |
-| A song is detected at half or double tempo | Check the profile, listen and tap the beat, and choose a custom BPM if needed. Use Ignore cached analysis when comparing fresh detector results. |
-| Review rejects a value | Custom values must be numeric and between 50 and 360 BPM. |
 | A previous review choice is still selected | Clear the review decision or replace it; clearing acoustic cache does not clear human choices. |
 | Apply cannot write or rename a track | Check folder permissions, whether another program has the file open, the proposed filename, and whether the output format is supported. |
 | Undo is unavailable | Undo requires a backup created before the last Apply. It is not a replacement for a library backup. |
