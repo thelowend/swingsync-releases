@@ -84,28 +84,6 @@ interpretation is recalculated from those features.
 Clearing the analysis cache does not delete music files. Saved review choices
 are separate; clear or replace a choice if you want to revisit it.
 
-## Command line
-
-Preview a folder using the Swing profile:
-
-```bash
-node index.cjs "/path/to/music" --profile swing
-```
-
-Review interactively and preview filename changes:
-
-```bash
-node index.cjs "/path/to/music" --profile swing --review --output filename
-```
-
-Add `--apply` only when you want to write the selected output. Use `--no-cache`
-for a fresh uncached run, `--csv report.csv` or `--json report.json` for reports,
-and `--help` for all options.
-
-You can configure default folders in a local `.env` using
-`SWINGSYNC_MUSIC_FOLDERS`; see [.env.example](.env.example). Explicit folder
-arguments override that default.
-
 ## Troubleshooting
 
 | Problem | What to check |
